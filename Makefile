@@ -1,0 +1,20 @@
+CXX ?= g++
+CXXFLAGS += -std=c++20 $(shell pkg-config fuse3 --cflags) -I include/
+LDFLAGS += $(shell pkg-config fuse3 --libs) -l OpenCL
+
+ifeq ($(DEBUG), 1)
+	CXXFLAGS += -g -DDEBUG -Wall -Werror
+endif
+
+bin/vramizer: build/util.o build/memory.o build/entry.o build/file.o build/dir.o build/symlink.o build/vramizer.o | bin
+	$(CXX) -o $@ $^ $(LDFLAGS)
+
+build bin:
+	@mkdir -p $@
+
+build/%.o: src/%.cpp | build
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
+.PHONY: clean
+clean:
+	rm -rf build/ bin/
