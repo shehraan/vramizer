@@ -1,7 +1,7 @@
 <h1 style="margin-bottom: 0;">vramizer</h1>
 <h4 style="margin-top: 4px;">A response to rising DRAM prices</h4>
 
-![RAM Prices Chart](resources\imgs\pcPartPickerRam.png)
+<p align="center"> <img src="resources\imgs\pcPartPickerRam.png" alt="Skyrocketing RAM prices chart" width="1000"> </p>
 
 As Desktop RAM and Storage prices have skyrocketed, one market has remained relatively stable - the used GPU market.
 
@@ -13,7 +13,7 @@ Knowing this, I thought that rather than going for the latest and greatest, it w
 
 And so I bought a used AMD Radeon RX 570 with 8GB of VRAM for just $30 (a 8GB stick of desktop DDR5 RAM can cost $100+). And this one includes a GPU as a bonus too! Thus began my experiment to try to see if we could use VRAM to replace standard DRAM.
 
-![AMD Radeon Rx 570 Graphics Card](resources\imgs\rx570.jpg)
+<p align="center"> <img src="resources\imgs\rx570.jpg" alt="AMD Radeon Rx 570 Graphics Card" width="1000"> </p>
 
 ## Bckground Information
 Vramizer is a utility that uses the [FUSE library](http://fuse.sourceforge.net/)
