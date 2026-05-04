@@ -15,7 +15,7 @@ And so I bought a used AMD Radeon RX 570 with 8GB of VRAM for just $30 (a 8GB st
 
 <p align="center"> <img src="resources\imgs\rx570.jpg" alt="AMD Radeon Rx 570 Graphics Card" width="1000"> </p>
 
-## Bckground Information
+## Background Information
 Vramizer is a utility that uses the [FUSE library](http://fuse.sourceforge.net/)
 to create a file system in VRAM. The idea is going to take advantage of system swap, which is when the computer offloads part of its programs to a secondary drive from RAM, usually caused by RAM overflow. Although, instead of going with the typical hard drives or SSDs, this program uses the video RAM of a discrete graphics card to store the extra files. 
 
